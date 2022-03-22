@@ -60,7 +60,7 @@ public class CSVDocument<T> {
                     if(column.header().equals("")){
                         headers.put(field, field.getName());
                     } else {
-                        headers.put(field, field.getName());
+                        headers.put(field, column.header());
                     }
                 } else {
                     //If annotations aren't used, use field name and include all fields
